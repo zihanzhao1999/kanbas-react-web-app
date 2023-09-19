@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course detail</title>
+
+
+    <!-- Citation: Student's answer from https://piazza.com/class/lm1gi2uzv1x402/post/49  -->
+    <style>
+      table {
+        width: 100%;
+      }
+      td {
+        vertical-align: top;
+      }
+    </style>
+</head>
+<body>
+  
+    <table>
+      <tr>
+        <!-- Column 1 -->
+        <td>
+          
+          <ul>
+            <li><a href="/Users/zihanzhao/Desktop/2023/fall/webdev/kanbas-react-web-app/public/kanbas/profile/index.html">Account</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="/Users/zihanzhao/Desktop/2023/fall/webdev/kanbas-react-web-app/public/kanbas/course navigation/course detail.html">Courses</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Commons</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </td>
+    
+          
+          <td>
+            <!-- Column 2 -->
+            <ul>
+              <li><a href="/Users/zihanzhao/Desktop/2023/fall/webdev/kanbas-react-web-app/public/kanbas/home.html">Home</a></li>
+              <li><a href="#">Modules</a></li>
+              <li><a href="#">Piazza</a></li>
+              <li><a href="#">Zoom Meetings</a></li>
+              <li><a href="/Users/zihanzhao/Desktop/2023/fall/webdev/kanbas-react-web-app/public/kanbas/assignments/assignments.html">Assignments</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="/Users/zihanzhao/Desktop/2023/fall/webdev/kanbas-react-web-app/public/kanbas/grades.html">Grades</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Panopto Video</a></li>
+              <li><a href="#">Discussions</a></li>
+              <li><a href="#">Announcements</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Rubrics</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Collaborations</a></li>
+              <li><a href="#">Syllabus</a></li>
+              <li><a href="/Users/zihanzhao/Desktop/2023/fall/webdev/kanbas-react-web-app/public/kanbas/course navigation/course detail.html">Settings</a></li>
+
+            </ul>
+          </td>
+    
+          
+          <td>
+            <!-- Column 3 -->
+            
+            <button type="button"><a href="/Users/zihanzhao/Desktop/2023/fall/webdev/kanbas-react-web-app/public/kanbas/course navigation/course detail.html">Course Detail</a></button>
+            <button type="button"><a href="#">Sections</a></button>
+            <button type="button"><a href="/Users/zihanzhao/Desktop/2023/fall/webdev/kanbas-react-web-app/public/kanbas/course navigation/course navigation.html">Navigation</a></button>
+            <button type="button"><a href="#">Apps</a></button>
+            <button type="button"><a href="#">Feature Options</a></button>
+            <button type="button"><a href="#">Intergrations</a></button>
+
+            <h1>Course Details</h1>
+            <label for="image">Image:</label>
+            <img id=image
+            src="111.png"
+            width="200px"
+            height="100px"/>
+
+
+            <br/><br/>
+
+
+
+            
+           <label>Name:</label>
+           CS5610 Web Development
+           <br/><br/>
+
+           <label>Course Code:</label>
+           CS5610 1111111111
+           <br/><br/>
+
+           <label>Blue Print Course:</label>
+           No
+           <br/><br/>
+
+           <label>Course Template:</label>
+           <input type="checkbox" name="check-template" id="chkbox-template" unchecked/>
+            <label for="chkbox-template">Enable course as a course template</label>   
+            <br/><br/>
+
+
+            <label>Time Zone:</label>
+           <select>
+            <option value="Eastern Time">Eastern Time(US&Canada)(-05:00/-04:00)</option>
+         </select>
+
+         <br/><br/>
+         <label>SIS ID:</label>
+          CS 5610 1111111111
+           <br/><br/>
+
+        <label>Sub Account:</label>
+           CS GRAD
+           <br/><br/>
+
+        <label>Term:</label>
+        Fall 2023 Full term
+           <br/><br/>
+
+        <label>Participation:</label>
+           <select>
+            <option value="Term">Term</option>
+          </select>
+            <br/><br/>
+
+
+            <label>Start:</label>
+              <br/>
+              <input type="date"
+                id="text-fields-st"/><br/>
+             
+              <br/><br/>
+
+              <label for="text-fields-end">End:</label>
+              <br/>
+              <input type="date"
+                id="text-fields-end"/><br/>
+             
+              <br/><br/>
+
+
+              <label>Restriction:</label>
+              <br/>
+              <input type="checkbox" value="before"
+                    name="check-genre" id="chkbox-1" checked/>
+              <label for="chkbox-1">Restrict Students from viewing course before start date</label>    <br/>
+
+              <input type="checkbox" value="after"
+                      name="check-genre" id="chkbox-2"/>
+              <label for="chkbox-2">Restrict Students from viewing course after end date</label>    <br/>
+
+              <br/><br/>
+
+              <label>Default Due Time:</label>
+           <select>
+            <option value="default">Account Default(11:59pm)</option>
+         </select>
+
+         <br/><br/>
+
+
+         <label>Language:</label>
+           <select>
+            <option value="Not set">Not set(user con-figurable, default to English)</option>
+         </select>
+         <br/><br/>
+
+         <label>File Storage:</label>
+         100000 megabytes
+         <br/><br/>
+
+
+         <label>Large Course:</label>
+    
+          <input type="checkbox"  id="chkbox-largecourse" unchecked/>
+            <label for="chkbox-largecourse">Launch Speedgrade Filtered by student group</label>    <br/>
+
+            <br/><br/>
+
+
+            <label>Grading Theme:</label>
+      
+            <input type="checkbox" id="chkbox-theme" unchecked/>
+              <label for="chkbox-theme">Enable course grading theme</label>    <br/>
+   <br/><br/>
+
+   <label>Licence:</label>
+   <select>
+    <option value="private">Private(Copyright)</option>
+ </select>
+ <br/><br/>
+
+
+ <label>File copyright:</label>
+
+ <input type="checkbox" id="chkbox-copyright" unchecked/>
+   <label for="chkbox-copyright">Copyright and Licence information must be provided to files before they are published</label>    <br/>
+
+
+   <br/><br/>
+
+
+   <label>Visibility:</label>
+   If you want to make your course public please contact your administrator/support.
+   <br/>
+   <select>
+    <option value="course">Course</option>
+ </select>
+
+ <br/>
+ <input type="checkbox" id="chkbox-include" unchecked/>
+   <label for="chkbox-include">include this course in public index</label>   
+    <br/><br/>
+ 
+
+
+
+ <label>Format:</label>
+   <select>
+    <option value="on campus">On Campus</option>
+ </select>
+ <br/><br/>
+
+
+
+ <label>Mastery Paths:</label>
+ <input type="checkbox" id="chkbox-ms" unchecked/>
+   <label for="chkbox-ms">Enable individual learning paths for students based on assessments</label>    <br/>
+
+
+
+   <label>Description:</label>
+   <textarea cols="20"
+         rows="10"
+         placeholder="Biography"
+         title="tooltip">
+</textarea>
+<a href="#">more options</a>
+
+
+<br/><br/>
+
+<button type="button">Update Course Detail</button>
+
+
+
+
+          </td>
+        </tr>
+
+
+
+
+    </body>
+</html>
