@@ -3,46 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../navigationbar.css"
+         rel="stylesheet"/>
+    <link href="profile.css"
+         rel="stylesheet"/>
 
 
-    <!-- Citation: Student's answer from https://piazza.com/class/lm1gi2uzv1x402/post/49  -->
-    <style>
-      table {
-        width: 100%;
-      }
-      td {
-        vertical-align: top;
-      }
-    </style>
 </head>
 <body>
-  
-    <table>
-    
-        
-      <tr>
-        <!-- Column 1 -->
-        <td>
-          
+
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 list-group sidebar1"> 
+          <!-- Column 1 -->
           <ul>
-            <li><a href="index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../course navigation/course detail.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
-    
-          
-          <td>
-            <!-- Column 2 -->
+            <li><a href="index.html" class="active"><i class="fas fa-user" style="font-size: 2em;"></i><br/> Account</a></li>
+            <li><a href="../Dashboard.html" ><i class="fas fa-compass" style="font-size: 2em;"></i><br/>Dashboard </a></li>
+            <li><a href="../home.html" ><i class="fas fa-book" style="font-size: 2em;"></i> <br/>Courses</a></li>
+            <li><a href="#" "><i class="fas fa-calendar-alt" style="font-size: 2em;"></i><br/>Calendar</a></li>
+            <li><a href="#" ><i class="fas fa-envelope" style="font-size: 2em;"></i><br/>Inbox</a></li>
+            <li><a href="#" ><i class="far fa-clock" style="font-size: 2em;"></i><br>History</a></li>
+            <li><a href="#" ><i class="fas fa-desktop" style="font-size: 2em;"></i><br>Studio</a></li>
+            <li><a href="#" ><i class="fas fa-sign-out-alt" style="font-size: 2em;"></i> <br/>Commons</a></li>
+            <li><a href="#" ><i class="far fa-handshake" style="font-size: 2em;"></i><br>Help</a></li>
+        </ul>
+        
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3 list-group-2">
+          <!-- Column 2 -->
             <ul>
-              <li><a href="#"">Notifications</a></li>
-              <li><a href="index.html">Profile</a></li>
+              <li><a href="#">Notifications</a></li>
+              <li><a href="#" class="active">Profile</a></li>
               <li><a href="#">Files</a></li>
               <li><a href="#">Settings</a></li>
               <li><a href="#">ePortfolios</a></li>
@@ -51,47 +48,49 @@
               <li><a href="#">Qwickly Course Tools</a></li>
               <li><a href="#">Global Announcements</a></li>
             </ul>
-          </td>
-    
+        
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3 profile_page"> 
+          <!-- Column 3 --> 
+          Zihan Zhao's profile
+          <hr>
+          <div class="account-info">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <i class="fas fa-user-circle fa-10x"></i>
+              <div class="text-end">
+                <a href="edit.html">
+                  <button class="btn btn-primary">Edit Profile</button>
+                </a>
+              </div>
+            </div>
+            <br>
+            <h2>Zihan Zhao</h2>
+          </div>
+          <br/><br/>
           
-          <td>
-            <!-- Column 3 -->
-            Zihan Zhao's profile
-            <hr>
-          
-           
-            <h1>Zihan Zhao</h1>
+          <h2>Contact</h2>
+          <p class="contact">No Registered Service, you can add some on the <a href="#">setting</a> page.</p>
+          <br/><br/>
 
-            <h2>Contact</h2>
-            <p>No Registered Service, you can add some on the setting page.</p>
-
-            <h2>Biography</h2>
-            <p>A brown bear.</p>
-
-
-            <h2>Links</h2>
-            <ul>
+          <h2>Biography</h2>
+          <p>A brown bear.</p>
+          <br/><br/>
+      
+          <h2>Links</h2>
+          <ul>
             <li><a href="https://www.youtube.com/@WebDevTV">YouTube</a></li>
-            </ul>
-            
+          </ul>
+        </div>
+      </div>
 
 
-    
-          </td>
+      
+    </div>
+</div>
 
-
-
-
-          <td> 
-
-            <!-- Column 4 -->
-            <button type="button"><a href="edit.html">Edit Profile</a></button>
-        </td>
-    
-         
-        </tr>
-      </table>
-
+  
 
 
     </body>

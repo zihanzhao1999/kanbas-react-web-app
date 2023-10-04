@@ -1,0 +1,26 @@
+.contact a{
+    text-decoration: none; 
+    color: red
+    }
+.list-group-3 a{
+    text-decoration: none; 
+    color: red
+}
+
+.btn-light a {
+    text-decoration: none;
+}
+
+.list-group-3 ul {
+    list-style-type: none; 
+}
+
+.list-group-3 ul li a {
+    text-align: left;
+    display: block;   
+}
+
+.profile_page {
+ 
+    width: 900px;
+}
