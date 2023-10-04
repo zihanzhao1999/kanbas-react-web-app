@@ -5,41 +5,38 @@
     <title>Assignments</title>
 
 
-    <!-- Citation: Student's answer from https://piazza.com/class/lm1gi2uzv1x402/post/49  -->
-    <style>
-      table {
-        width: 100%;
-      }
-      td {
-        vertical-align: top;
-      }
-    </style>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../navigationbar.css"
+         rel="stylesheet"/>
+    <link href="assignment.css"
+         rel="stylesheet"/>
+
+    
 </head>
 <body>
-  
-    <table>
-        
-      <tr>
-        <!-- Column 1 -->
-        <td>
-          
-          <ul>
-            <li><a href="../profile/index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../course navigation/course detail.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
-          
-          <td>
-            <!-- Column 2 -->
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 list-group sidebar1"> 
+            <!-- Column 1 --> 
             <ul>
-              <li><a href="../home.html">Home</a></li>
+              <li><a href="../profile/index.html"><i class="fas fa-user" style="font-size: 2em;"></i><br/> Account</a></li>
+              <li><a href="../Dashboard.html"><i class="fas fa-compass" style="font-size: 2em;"></i><br/>Dashboard </a></li>
+              <li><a href="../home.html" class="active" ><i class="fas fa-book" style="font-size: 2em;"></i> <br/>Courses</a></li>
+              <li><a href="#" "><i class="fas fa-calendar-alt" style="font-size: 2em;"></i><br/>Calendar</a></li>
+              <li><a href="#" ><i class="fas fa-envelope" style="font-size: 2em;"></i><br/>Inbox</a></li>
+              <li><a href="#" ><i class="far fa-clock" style="font-size: 2em;"></i><br>History</a></li>
+              <li><a href="#" ><i class="fas fa-desktop" style="font-size: 2em;"></i><br>Studio</a></li>
+              <li><a href="#" ><i class="fas fa-sign-out-alt" style="font-size: 2em;"></i> <br/>Commons</a></li>
+              <li><a href="#" ><i class="far fa-handshake" style="font-size: 2em;"></i><br>Help</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 list-group-2">
+             <!-- Column 2 --> 
+             <ul>
+              <li><a href="home.html" class="active">Home</a></li>
               <li><a href="#">Modules</a></li>
               <li><a href="#">Piazza</a></li>
               <li><a href="#">Zoom Meetings</a></li>
@@ -58,110 +55,216 @@
               <li><a href="#">Syllabus</a></li>
               <li><a href="../course navigation/course detail.html">Settings</a></li>
 
-            </ul>
-          </td>
-    
+          </ul>
+            
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 assignment-detail2"> 
+            <!-- Column 3 --> 
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="flex-grow-1">
+              <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">CS101</a></li>
+                  <li class="breadcrumb-item"><a href="#">Fall 2023</a></li>
+                  <li class="breadcrumb-item"><a href="#">section 1</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+              </ol>
+            </nav>
+
+            <div class="d-flex justify-content-between mb-3">
+              <input type="text" class="form-control me-4" placeholder="Search For Assignments">
+      
+              <div class="d-flex align-items-center">
+                
+                  <button type="button" class="btn btn-secondary btn-sm me-2" style="height: 38px; white-space: nowrap;"><i class="fas fa-plus"></i> Group</button>
+                  <button type="button" class="btn btn-danger btn-sm me-2" style="height: 38px; white-space: nowrap;"><i class="fas fa-plus"></i> Assignments</button>
+              
+      
+                  
+
+                  <div class="btn btn-sm dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item" value="1">drop1</button>
+                        <button class="dropdown-item" value="2">drop2</button>
+                    </div>
+                
+                
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <ul class="list-group-assignment">
+              
+              <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                <div class="fw-bold"><a href="edit.html">ASSIGNMENTS</a></div>
+                <span><div class="rounded border border-secondary p-1">40% of Total</div>
+                </span>
+              </li>
+              
+             
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold"><a href="edit.html">A1 - ENV + HTML</a></div>
+                    Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold"><a href="edit.html">A2 - CSS + BOOTSTRAP</a></div>
+                  Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
+            
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold"><a href="edit.html">A3 - JS + REACT</a></div>
+                    Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold"><a href="edit.html">A4 - STATE + REDUX</a></div>
+                  Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold"><a href="edit.html">A5 - NODE + SESSION</a></div>
+                    Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold"><a href="edit.html">A6 - MONGO</a></div>
+                  Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
           
-          <td>
-            <!-- Column 3 -->
-            <input  type="text"
-            placeholder="Search For Assignments"/>
-            <button type="button">Collapse All</button>
-            <button type="button">View Progress</button>
-
-            <select>
-              <option value="Edit Assignment Dates">Edit Assignment Dates</option>
-              <option value="Delete">Delete Assignment</option>
-           </select>
-
-
-
-           <h2>Assignments 40% of total</h2>
-           <select>
-              <option value="Edit">Edit</option>
-              <option value="Speed Grader">Speed Grader</option>
-              <option value="Duplicate">Duplicate</option>
-              <option value="Delete">Delete</option>
-              <option value="Move to...">Move to...</option>
-              <option value="Send to...">Send to...</option>
-              <option value="Copy to...">Copy to...</option>
-              <option value="Share to Commons">Share to Commons</option>
-           </select>
-
-           <ul>
-            <li><a href="edit.html"><p>A1 - ENV + HTML</p>Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="edit.html"><p>A2 - CSS + BOOTSTRAP</p> Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="edit.html"><p>A3 - JS + REACT</p> Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="edit.html"><p>A4 - STATE + REDUX</p> Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="edit.html"><p>A5 - NODE + SESSION</p> Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="edit.html"><p>A6 - MONGO</p> Multiple Modules</a> | Not avaliable yet</li>
-          </ul>
+            </ul>
 
 
 
 
-           <h2>QUIZZES 10% of Total</h2>
-           <select>
-            <option value="Edit">Edit</option>
-            <option value="Speed Grader">Speed Grader</option>
-            <option value="Duplicate">Duplicate</option>
-            <option value="Delete">Delete</option>
-            <option value="Move to...">Move to...</option>
-            <option value="Send to...">Send to...</option>
-            <option value="Copy to...">Copy to...</option>
-            <option value="Share to Commons">Share to Commons</option>
-         </select>
+            <ul class="list-group-assignment">
+              <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                <div class="fw-bold"><a href="edit.html">QUIZZES</a></div>
+                <span><div class="rounded border border-secondary p-1">10% of Total</div></span>
+              </li>
+            
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold"><a href="edit.html">Q1 - HTML</a></div>
+                    Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
 
-         <ul>
-            <li><a href="#"><p>Q1 - HTML</p> Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="#"><p>Q2 - CSS</p> Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="#"><p>Q3 - JS, ES6</p> Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="#"><p>Q4 - NODE</p> Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="#"><p>Q5 - MONGO</p> Multiple Modules</a> | Not avaliable yet</li>
-          </ul>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold"><a href="edit.html">Q2 - CSS</a></div>
+                  Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
+            
 
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold"><a href="edit.html">Q3 - JS</a></div>
+                    Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
 
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold"><a href="edit.html">Q4 - Node</a></div>
+                  Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
 
-
-
-         <h2>EXAMS 20% of Total</h2>
-         <select>
-            <option value="Edit">Edit</option>
-            <option value="Speed Grader">Speed Grader</option>
-            <option value="Duplicate">Duplicate</option>
-            <option value="Delete">Delete</option>
-            <option value="Move to...">Move to...</option>
-            <option value="Send to...">Send to...</option>
-            <option value="Copy to...">Copy to...</option>
-            <option value="Share to Commons">Share to Commons</option>
-         </select>
-
-         <ul>
-            <li><a href="#"><p>Midterm</p> Multiple Modules</a> | Not avaliable yet</li>
-            <li><a href="#"><p>Final</p> Multiple Modules</a> | Not avaliable yet</li>
-          </ul>
-
-
-
-         <h2>PROJECT 30% of Total</h2>
-         <select>
-            <option value="Edit">Edit</option>
-            <option value="Speed Grader">Speed Grader</option>
-            <option value="Duplicate">Duplicate</option>
-            <option value="Delete">Delete</option>
-            <option value="Move to...">Move to...</option>
-            <option value="Send to...">Send to...</option>
-            <option value="Copy to...">Copy to...</option>
-            <option value="Share to Commons">Share to Commons</option>
-         </select>
-
-         <ul>
-            <li><a href="#"><p>Project</p> Multiple Modules</a> | Not avaliable yet</li>
-          </ul>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold"><a href="edit.html">A5 - MONGO</a></div>
+                    Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
 
 
+            </ul>
 
-          </td>
 
-        </tr>
-        </table>
+            <ul class="list-group-assignment">
+              <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                <div class="fw-bold"><a href="edit.html">EXAMS</a></div>
+                <span><div class="rounded border border-secondary p-1">20% of Total</div></span>
+              </li>
+            
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold"><a href="edit.html">Midterm</a></div>
+                  Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold"><a href="edit.html">Final</a></div>
+                    Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
+
+            </ul>
+
+            <ul class="list-group-assignment">
+              <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                <div class="fw-bold"><a href="edit.html">PROJECT</a></div>
+                <span><div class="rounded border border-secondary p-1">30% of Total</div></span>
+              </li>
+            
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold"><a href="edit.html">Multiple Modules</a></div>
+                    Multiple Modules | Not avaliable yet 
+                </div>
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="color: #5ec15b"></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+              </li>
+
+  
+
+            </ul>
+
+
+
+          
+
+
+        
+        </div>
+ 
+      
+          
+  </div>
+
+</body>
+</html>
