@@ -5,38 +5,34 @@
     <title>Course detail</title>
 
 
-    <!-- Citation: Student's answer from https://piazza.com/class/lm1gi2uzv1x402/post/49  -->
-    <style>
-      table {
-        width: 100%;
-      }
-      td {
-        vertical-align: top;
-      }
-    </style>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../navigationbar.css"
+         rel="stylesheet"/>
+
 </head>
 <body>
   
-    <table>
-      <tr>
-        <!-- Column 1 -->
-        <td>
-          
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3  list-group sidebar1"> 
+          <!-- Column 1 -->
           <ul>
-            <li><a href="../profile/index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="course detail.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="../profile/index.html"><i class="fas fa-user" style="font-size: 2em;"></i><br/> Account</a></li>
+            <li><a href="../Dashboard.html"><i class="fas fa-compass" style="font-size: 2em;"></i><br/>Dashboard </a></li>
+            <li><a href="../home.html" class="active" ><i class="fas fa-book" style="font-size: 2em;"></i> <br/>Courses</a></li>
+            <li><a href="#" "><i class="fas fa-calendar-alt" style="font-size: 2em;"></i><br/>Calendar</a></li>
+            <li><a href="#" ><i class="fas fa-envelope" style="font-size: 2em;"></i><br/>Inbox</a></li>
+            <li><a href="#" ><i class="far fa-clock" style="font-size: 2em;"></i><br>History</a></li>
+            <li><a href="#" ><i class="fas fa-desktop" style="font-size: 2em;"></i><br>Studio</a></li>
+            <li><a href="#" ><i class="fas fa-sign-out-alt" style="font-size: 2em;"></i> <br/>Commons</a></li>
+            <li><a href="#" ><i class="far fa-handshake" style="font-size: 2em;"></i><br>Help</a></li>
           </ul>
-        </td>
+    </div>
     
           
-          <td>
+     <div class="col-12 col-md-6 col-lg-3  list-group-2">
             <!-- Column 2 -->
             <ul>
               <li><a href="../home.html">Home</a></li>
@@ -56,204 +52,310 @@
               <li><a href="#">Outcomes</a></li>
               <li><a href="#">Collaborations</a></li>
               <li><a href="#">Syllabus</a></li>
-              <li><a href="course detail.html">Settings</a></li>
-
+              <li><a href="course detail.html" class="active">Settings</a></li>
             </ul>
-          </td>
+    </div>
     
           
-          <td>
-            <!-- Column 3 -->
-            
-            <button type="button"><a href="course detail.html">Course Detail</a></button>
-            <button type="button"><a href="#">Sections</a></button>
-            <button type="button"><a href="course navigation.html">Navigation</a></button>
-            <button type="button"><a href="#">Apps</a></button>
-            <button type="button"><a href="#">Feature Options</a></button>
-            <button type="button"><a href="#">Intergrations</a></button>
+    <div class="col-12 col-md-10 col-lg-9 course-detail">
+      <!-- Column 3 -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="course detail.html">Course Detail</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sections</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="course navigation.html">Navigation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Feature Options</a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" >Integrations</a>
+        </li>
+     </ul>
 
-            <h1>Course Details</h1>
-            <label for="image">Image:</label>
-            <img id=image
-            src="111.png"
-            width="200px"
-            height="100px"/>
-
-
-            <br/><br/>
-
-
-
-            
-           <label>Name:</label>
-           CS5610 Web Development
-           <br/><br/>
-
-           <label>Course Code:</label>
-           CS5610 1111111111
-           <br/><br/>
-
-           <label>Blue Print Course:</label>
-           No
-           <br/><br/>
-
-           <label>Course Template:</label>
-           <input type="checkbox" name="check-template" id="chkbox-template" unchecked/>
-            <label for="chkbox-template">Enable course as a course template</label>   
-            <br/><br/>
-
-
-            <label>Time Zone:</label>
-           <select>
-            <option value="Eastern Time">Eastern Time(US&Canada)(-05:00/-04:00)</option>
-         </select>
-
-         <br/><br/>
-         <label>SIS ID:</label>
-          CS 5610 1111111111
-           <br/><br/>
-
-        <label>Sub Account:</label>
-           CS GRAD
-           <br/><br/>
-
-        <label>Term:</label>
-        Fall 2023 Full term
-           <br/><br/>
-
-        <label>Participation:</label>
-           <select>
-            <option value="Term">Term</option>
-          </select>
-            <br/><br/>
-
-
-            <label>Start:</label>
-              <br/>
-              <input type="date"
-                id="text-fields-st"/><br/>
-             
-              <br/><br/>
-
-              <label for="text-fields-end">End:</label>
-              <br/>
-              <input type="date"
-                id="text-fields-end"/><br/>
-             
-              <br/><br/>
-
-
-              <label>Restriction:</label>
-              <br/>
-              <input type="checkbox" value="before"
-                    name="check-genre" id="chkbox-1" checked/>
-              <label for="chkbox-1">Restrict Students from viewing course before start date</label>    <br/>
-
-              <input type="checkbox" value="after"
-                      name="check-genre" id="chkbox-2"/>
-              <label for="chkbox-2">Restrict Students from viewing course after end date</label>    <br/>
-
-              <br/><br/>
-
-              <label>Default Due Time:</label>
-           <select>
-            <option value="default">Account Default(11:59pm)</option>
-         </select>
-
-         <br/><br/>
-
-
-         <label>Language:</label>
-           <select>
-            <option value="Not set">Not set(user con-figurable, default to English)</option>
-         </select>
-         <br/><br/>
-
-         <label>File Storage:</label>
-         100000 megabytes
-         <br/><br/>
-
-
-         <label>Large Course:</label>
-    
-          <input type="checkbox"  id="chkbox-largecourse" unchecked/>
-            <label for="chkbox-largecourse">Launch Speedgrade Filtered by student group</label>    <br/>
-
-            <br/><br/>
-
-
-            <label>Grading Theme:</label>
+  
+      <h1>Course Details</h1>
+  
+      <div class="row mb-3">
+          <div class="col-4">
+              <label for="image" class="fw-bold">Image:</label>
+          </div>
+          <div class="col-8">
+              <img id="image" src="111.png" width="200px" height="100px"/>
+          </div>
+      </div>
+  
+      <div class="row mb-3">
+          <div class="col-4">
+              <label class="fw-bold">Name:</label>
+          </div>
+          <div class="col-8">
+              CS5610 Web Development
+          </div>
+      </div>
       
-            <input type="checkbox" id="chkbox-theme" unchecked/>
-              <label for="chkbox-theme">Enable course grading theme</label>    <br/>
-   <br/><br/>
+      <div class="row mb-3">
+          <div class="col-4">
+              <label class="fw-bold">Course Code:</label>
+          </div>
+          <div class="col-8">
+              CS5610 1111111111
+          </div>
+      </div>
+  
+      <div class="row mb-3">
+          <div class="col-4">
+              <label class="fw-bold">Blue Print Course:</label>
+          </div>
+          <div class="col-8">
+              No
+          </div>
+      </div>
+  
+      <div class="row mb-3">
+          <div class="col-4">
+              <label class="fw-bold">Course Template:</label>
+          </div>
+          <div class="col-8">
+              <input type="checkbox" name="check-template" id="chkbox-template">
+              <label for="chkbox-template">Enable course as a course template</label>
+          </div>
+      </div>
+  
+      <div class="row mb-3">
+          <div class="col-4">
+              <label class="fw-bold">Time Zone:</label>
+          </div>
+          <div class="col-8">
+              <select>
+                  <option value="Eastern Time">Eastern Time(US&Canada)(-05:00/-04:00)</option>
+              </select>
+          </div>
+      </div>
+    
 
-   <label>Licence:</label>
-   <select>
-    <option value="private">Private(Copyright)</option>
- </select>
- <br/><br/>
+    <div class="row mb-3">
+      <div class="col-4">
+          <label class="fw-bold">SIS ID:</label>
+      </div>
+      <div class="col-8">
+          CS 5610 1111111111
+      </div>
+  </div>
 
+  <div class="row mb-3">
+      <div class="col-4">
+          <label class="fw-bold">Sub Account:</label>
+      </div>
+      <div class="col-8">
+          CS GRAD
+      </div>
+  </div>
 
- <label>File copyright:</label>
+  <div class="row mb-3">
+      <div class="col-4">
+          <label class="fw-bold">Term:</label>
+      </div>
+      <div class="col-8">
+          Fall 2023 Full term
+      </div>
+  </div>
 
- <input type="checkbox" id="chkbox-copyright" unchecked/>
-   <label for="chkbox-copyright">Copyright and Licence information must be provided to files before they are published</label>    <br/>
+  <div class="row mb-3">
+      <div class="col-4">
+          <label class="fw-bold">Participation:</label>
+      </div>
+      <div class="col-8">
+          <select>
+              <option value="Term">Term</option>
+          </select>
+      </div>
+  </div>
 
+  <div class="row mb-3">
+      <div class="col-4">
+          <label class="fw-bold">Start:</label>
+      </div>
+      <div class="col-8">
+          <input type="date" id="text-fields-st">
+      </div>
+  </div>
 
-   <br/><br/>
+  <div class="row mb-3">
+      <div class="col-4">
+          <label class="fw-bold">End:</label>
+      </div>
+      <div class="col-8">
+          <input type="date" id="text-fields-end">
+      </div>
+  </div>
 
+  <div class="row mb-3">
+    <div class="col-4">
+        <label class="fw-bold">Restriction:</label>
+    </div>
+    <div class="col-8">
+        <div class="form-check">
+            <input type="checkbox" value="before" name="check-genre" id="chkbox-1" checked>
+            <label for="chkbox-1">Restrict Students from viewing course before start date</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" value="after" name="check-genre" id="chkbox-2">
+            <label for="chkbox-2">Restrict Students from viewing course after end date</label>
+        </div>
+    </div>
+</div>
 
-   <label>Visibility:</label>
-   If you want to make your course public please contact your administrator/support.
-   <br/>
-   <select>
-    <option value="course">Course</option>
- </select>
+<div class="row mb-3">
+    <div class="col-4">
+        <label class="fw-bold">Default Due Time:</label>
+    </div>
+    <div class="col-8">
+        <select>
+            <option value="default">Account Default(11:59pm)</option>
+        </select>
+    </div>
+</div>
 
- <br/>
- <input type="checkbox" id="chkbox-include" unchecked/>
-   <label for="chkbox-include">include this course in public index</label>   
-    <br/><br/>
- 
+<div class="row mb-3">
+    <div class="col-4">
+        <label class="fw-bold">Language:</label>
+    </div>
+    <div class="col-8">
+        <select>
+            <option value="Not set">Not set(user configurable, default to English)</option>
+        </select>
+    </div>
+</div>
 
+<div class="row mb-3">
+    <div class="col-4">
+        <label class="fw-bold">File Storage:</label>
+    </div>
+    <div class="col-8">
+        100000 megabytes
+    </div>
+</div>
 
+<div class="row mb-3">
+  <div class="col-4">
+      <label class="fw-bold">Large Course:</label>
+  </div>
+  <div class="col-8">
+      <div class="form-check">
+          <input type="checkbox" id="chkbox-largecourse">
+          <label for="chkbox-largecourse">Launch Speedgrade Filtered by student group</label>
+      </div>
+  </div>
+</div>
 
- <label>Format:</label>
-   <select>
-    <option value="on campus">On Campus</option>
- </select>
- <br/><br/>
+<div class="row mb-3">
+  <div class="col-4">
+      <label class="fw-bold">Grading Theme:</label>
+  </div>
+  <div class="col-8">
+      <div class="form-check">
+          <input type="checkbox" id="chkbox-theme">
+          <label for="chkbox-theme">Enable course grading theme</label>
+      </div>
+  </div>
+</div>
 
+<div class="row mb-3">
+  <div class="col-4">
+      <label class="fw-bold">Licence:</label>
+  </div>
+  <div class="col-8">
+      <select>
+          <option value="private">Private(Copyright)</option>
+      </select>
+  </div>
+</div>
 
+<div class="row mb-3">
+  <div class="col-4">
+      <label class="fw-bold">File copyright:</label>
+  </div>
+  <div class="col-8">
+      <div class="form-check">
+          <input type="checkbox" id="chkbox-copyright">
+          <label for="chkbox-copyright">Copyright and Licence information must be provided to files before they are published</label>
+      </div>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col-4">
+      <label class="fw-bold">Visibility:</label>
+  </div>
+  <div class="col-8">
+      <p>If you want to make your course public please contact your administrator/support.</p>
+      <select>
+          <option value="course">Course</option>
+      </select>
+      <div class="form-check mt-2">
+          <input type="checkbox" id="chkbox-include">
+          <label for="chkbox-include">Include this course in public index</label>
+      </div>
+  </div>
+</div>
 
- <label>Mastery Paths:</label>
- <input type="checkbox" id="chkbox-ms" unchecked/>
-   <label for="chkbox-ms">Enable individual learning paths for students based on assessments</label>    <br/>
+<div class="row mb-3">
+  <div class="col-4">
+      <label class="fw-bold">Format:</label>
+  </div>
+  <div class="col-8">
+      <select>
+          <option value="on campus">On Campus</option>
+      </select>
+  </div>
+</div>
 
+<div class="row mb-3">
+  <div class="col-4">
+      <label class="fw-bold">Mastery Paths:</label>
+  </div>
+  <div class="col-8">
+    <div class="form-check">
+        <input type="checkbox" id="chkbox-ms">
+        <label for="chkbox-ms">Enable individual learning paths for students based on assessments</label>
+    </div>
+</div>
 
+</div>
 
-   <label>Description:</label>
-   <textarea cols="20"
-         rows="10"
-         placeholder="Biography"
-         title="tooltip">
-</textarea>
-<a href="#">more options</a>
+<div class="row mb-3">
+  <div class="col-4">
+      <label class="fw-bold">Description:</label>
+  </div>
 
+  <div class="col-8">
+    <div style="display: flex; flex-direction: column;">
+      <textarea cols="40" rows="10" placeholder="Biography" title="tooltip"></textarea>
+      <a href="#">More options</a>
+    </div>
+  </div>
+  
 
-<br/><br/>
+</div>
 
-<button type="button">Update Course Detail</button>
+<div class="row mb-3">
+  <div class="col-12 d-flex justify-content-end">
+      <button type="button" style="background-color: red; color: white;">Update Course Detail</button>
+  </div>
+</div>
 
+</div> 
 
-
-
-          </td>
-        </tr>
-
-
-
-
-    </body>
+</body>
 </html>
+
+
+
+
+
+  
+            

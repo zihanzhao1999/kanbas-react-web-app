@@ -1,0 +1,150 @@
+.sidebar1 {
+    width: 85px;
+    max-width: 85px; 
+    }
+
+    .wd-flex-row-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+
+    .list-group {
+        background-color: black;
+        width: 85px; 
+    }
+    .list-group ul {
+        padding: 0;
+        list-style-type: none;
+    }
+    .list-group a {
+        font-size: 10px;
+        display: block;
+        background-color: black;
+        color: white;
+        text-align: center;
+        text-decoration: none; 
+        padding: 5px 10px; 
+        margin: 5px; 
+        transition: 0.3s;
+    }
+    .list-group a i {
+        color: red;
+        margin-bottom: 5px;
+    }
+
+    .list-group a.active {
+    background-color: white;
+    color: red;
+    width:110%;
+    box-sizing: border-box;
+    }
+
+    .list-group a[href="profile/index.html"] i {
+        color: white;
+    }
+    
+   
+    .list-group-2 {
+    width: 190px;
+    margin-left: 20px ; 
+    }
+
+    .list-group-2 a {
+    text-decoration: none; 
+    display: block;
+    color: red; 
+    padding-left: 8px; 
+    padding-right: 8px; 
+    padding-top: 15px; 
+    white-space: normal;
+    overflow-wrap: break-word; 
+    text-align: left; 
+    }
+
+    .list-group-2 ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+
+    .list-group-2 a.active {
+    color: black; 
+    border-left: 2px solid black;
+    background-color: white; 
+    padding-left: 10px;
+    }
+
+ 
+
+    .list-group-dashboard {
+        padding-left: 20px; 
+        display: block;  
+        width:90% 
+    }
+
+    .course-card {
+        width: 260px; 
+        margin: 35px; 
+    }
+    
+    .card-text {
+        color: grey;
+        margin-bottom: 5px;
+    }
+
+    .course-image{
+        background-color: blue;
+         height: 150px;
+    }
+
+    .card-title a{
+        text-decoration: none;
+    }
+
+    .list-group-dashboard h2{
+        padding-left: 20px;
+    }
+
+    .listed-group-3{
+        width: 50%;
+    }
+
+   
+    .listed-group-3 .list-group-module a{
+        text-decoration: none;
+        color: red; 
+    }
+
+    ul {
+        list-style-type: none;
+    }
+    
+    a{
+        text-decoration: none !important;
+        color: red;
+    }
+    
+    .list-group a {
+        box-sizing: border-box;
+    }
+
+    .profile_page{
+        width:70%;
+    }
+
+    .profile_page a{
+        color:black;
+    }
+
+    .list-group-dashboard a{
+        color:black;
+    }
+
+    .breadcrumb a{
+        color:black;
+    }
+
+    .listed-group-4 a{
+        color:black;
+    }
