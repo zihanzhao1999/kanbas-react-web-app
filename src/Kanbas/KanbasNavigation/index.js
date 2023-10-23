@@ -31,15 +31,6 @@ function KanbasNavigation() {
   return (
     <div className="list-group kanbas-nav">
       {links.map((link, index) => (
-       
-        // <Link
-        //     key={index}
-        //     to={`/Kanbas/${link.route}`}
-        //     className={`list-group-item ${pathname === `/Kanbas/${link.route}` && "active"}`}>
-        //   <FontAwesomeIcon className={`nav-icon ${link.colorClass}`} icon={link.icon} />
-        //   {link.name}
-        // </Link>
-
       <Link
         key={index}
         to={`/Kanbas/${link.route}`}
@@ -49,9 +40,6 @@ function KanbasNavigation() {
           <span className="nav-text">{link.name}</span>
         </div>
       </Link>
-
-
- 
 
 
       ))}
