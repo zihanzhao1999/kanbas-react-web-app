@@ -2,6 +2,7 @@
 
 
 .list-group.kanbas-nav {
+    position: fixed; 
     background-color: black;
     width: 100px;
     /* position: fixed; */
@@ -74,7 +75,7 @@
 }
 
 .content-area {
-    margin-left: 50px; /* 留出100px的导航宽度和10px的额外空间 */
+    margin-left: 50px; 
 }
 
 

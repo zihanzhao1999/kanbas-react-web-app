@@ -1,0 +1,34 @@
+.course-nav-list-group {
+    position: fixed; 
+    left: 120px; 
+    top: 0;
+    bottom: 0;
+    height: 100%; 
+    margin-left: -15px;
+    overflow-y: auto;
+
+}
+
+
+.course-nav-list-group .list-group-item {
+    text-decoration: none;
+    display: block;
+    color: red;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 15px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: left;
+    border: none; 
+    background-color: transparent; 
+}
+
+
+.course-nav-list-group .list-group-item.active {
+    color: black;
+    border-left: 2px solid black;
+    background-color:transparent;
+    padding-left: 10px;
+}
+
