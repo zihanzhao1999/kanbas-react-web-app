@@ -2,14 +2,18 @@
 
 
 .list-group.kanbas-nav {
+    position: fixed; 
     background-color: black;
     width: 100px;
-    position: fixed;
+    position: fixed; 
     left: 0;
     top: 0;
     bottom: 0;
+    height: 100%; 
+    margin-left: 0; 
     overflow-y: auto;
 }
+
 
 .list-group.kanbas-nav .list-group-item {
     color: white !important;
@@ -37,5 +41,42 @@
     display: flex;
     align-items: center;
 }
+
+
+.course-card .card {
+    background-color: white;  
+    overflow: hidden;        
+    margin-bottom: 20px;     
+}
+
+.course-card .course-image {
+    background-color: blue; 
+    height: 150px;             
+}
+
+.course-card .card-title {
+    color: black;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+.course-card .card-text {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.course-link {
+    text-decoration: none; 
+    color: black; 
+}
+
+.course-link:hover {
+    text-decoration: underline;
+}
+
+.content-area {
+    margin-left: 50px; 
+}
+
 
 

@@ -3,17 +3,7 @@ import db from "../Database";
 function Dashboard() {
   const courses = db.courses;
   return (
-  //   <div>
-  //     <h1>Dashboard</h1>
-  //     <div className="list-group">
-  //       {courses.map((course) => (
-  //         <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item">
-  //           {course.name}
-  //         </Link>
-  //       ))}
-  //     </div>
-  //   </div>
-  // );
+
   <div>
       <h1>Dashboard</h1>
       <div className="row">
@@ -24,7 +14,7 @@ function Dashboard() {
               <div className="course-image"></div>
               <div className="card-body">
                 <h5 className="card-title">
-                  <Link to={`/Kanbas/Courses/${course._id}`}>{course.name}</Link>
+                <Link to={`/Kanbas/Courses/${course._id}`} className="course-link">{course.name}</Link>
                 </h5>
                 <p className="card-text">{course.number}</p>
                 <p className="card-text">{`${course.startDate} - ${course.endDate}`}</p>
