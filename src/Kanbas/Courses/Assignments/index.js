@@ -16,7 +16,7 @@ function Assignments() {
 
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
       <h2>Assignments for course {courseId}</h2>
       <nav style={{ "--bs-breadcrumb-divider": "'>'" }} aria-label="breadcrumb" className="flex-grow-1">
         <ol className="breadcrumb mb-0">
@@ -57,8 +57,8 @@ function Assignments() {
          >
         <div>{assignment.title}</div>
         <div>
-          <FontAwesomeIcon icon="check-circle" style={{ color: '#5ec15b', marginRight: '5px' }} />
-          <FontAwesomeIcon icon="ellipsis-v" />
+          <FontAwesomeIcon icon="faCheckCircle" style={{ color: '#5ec15b', marginRight: '5px' }} />
+          <FontAwesomeIcon icon="faEllipsisV" />
         </div>
        </Link>
          ))}
