@@ -52,7 +52,7 @@ function AssignmentEditor() {
   };
 
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
       <h2>Assignment Name</h2>
       <input value={assignment.title} className="form-control mb-2" />
 

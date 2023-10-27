@@ -57,8 +57,8 @@ function Assignments() {
          >
         <div>{assignment.title}</div>
         <div>
-          <FontAwesomeIcon icon="faCheckCircle" style={{ color: '#5ec15b', marginRight: '5px' }} />
-          <FontAwesomeIcon icon="faEllipsisV" />
+        <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#5ec15b', marginRight: '5px' }} />
+        <FontAwesomeIcon icon={faEllipsisV} />
         </div>
        </Link>
          ))}
