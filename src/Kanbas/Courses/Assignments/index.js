@@ -1,16 +1,22 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle, faEllipsisV } from "@fortawesome/free-solid-svg-icons";
+
+
 
 function Assignments() {
   const { courseId } = useParams();
   const assignments = db.assignments;
+
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId
   );
 
+
   return (
-    <div>
+    <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
       <h2>Assignments for course {courseId}</h2>
       <nav style={{ "--bs-breadcrumb-divider": "'>'" }} aria-label="breadcrumb" className="flex-grow-1">
         <ol className="breadcrumb mb-0">
@@ -42,16 +48,29 @@ function Assignments() {
           <div className="fw-bold">ASSIGNMENTS</div>
           <span><div className="rounded border border-secondary p-1">40% of Total</div></span>
         </li>
+
         {courseAssignments.map((assignment) => (
-          <Link
-            key={assignment._id}
-            to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-            className="list-group-item"
-          >
-            {assignment.title}
-          </Link>
-        ))}
+        <Link
+         key={assignment._id}
+         to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+         className="list-group-item d-flex justify-content-between align-items-center"
+         >
+        <div>{assignment.title}</div>
+        <div>
+          <FontAwesomeIcon icon="check-circle" style={{ color: '#5ec15b', marginRight: '5px' }} />
+          <FontAwesomeIcon icon="ellipsis-v" />
+        </div>
+       </Link>
+         ))}
+
       </div>
+
+    
+
+
+
+
+
     </div>
   );
 }
