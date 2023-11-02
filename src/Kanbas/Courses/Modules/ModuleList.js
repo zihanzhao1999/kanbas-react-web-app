@@ -24,22 +24,25 @@ function ModuleList() {
 
 
     <li className="list-group-item">
-      <button className="btn btn-success" onClick={() => { addModule(module) }}>
-        Add
-      </button>
-      <button className="btn btn-success" onClick={updateModule}>
-         Update
-      </button>
+    <button className="btn btn-success" onClick={() => dispatch(addModule(module))}>
+      Add
+    </button>
+    <button className="btn btn-success" onClick={() => dispatch(updateModule(module))}>
+      Update
+    </button>
+
 
       <div className="d-flex align-items-center mt-2">
+
         <input value={module.name}
-            onChange={(e) => setModule({
-                ...module, name: e.target.value })}
-            className="mr-2"  />
+          onChange={(e) => dispatch(setModule({
+            ...module, name: e.target.value }))}
+          className="mr-2"  />
         <textarea value={module.description}
-            onChange={(e) => setModule({
-                ...module, description: e.target.value })}
+          onChange={(e) => dispatch(setModule({
+          ...module, description: e.target.value }))}
         />
+
       </div>
       </li>
 
