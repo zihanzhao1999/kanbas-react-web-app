@@ -2,43 +2,48 @@ import { createSlice } from "@reduxjs/toolkit";
 import db from "../../Database";
 
 
+
+
+
 const initialState = {
-    assignments: db.assignments,
-  assignment: { name: "New Module 123", description: "New Description" },
+  assignments: db.assignments || [], 
+  assignment: { 
+    title: "",
+    description: "",
+    dueDate: "",
+    availableFromDate: "",
+    availableUntilDate: ""
+  },
 };
 
-
-const modulesSlice = createSlice({
-  name: "modules",
+const assignmentsSlice = createSlice({
+  name: "assignments",
   initialState,
   reducers: {
-    addModule: (state, action) => {
-      state.modules = [
-        { ...action.payload, _id: new Date().getTime().toString() },
-          ...state.modules,
-      ];
+    addAssignment: {
+      reducer: (state, action) => {
+        state.assignments.push(action.payload);
+      },
+
     },
-    deleteModule: (state, action) => {
-      state.modules = state.modules.filter(
-        (module) => module._id !== action.payload
+    deleteAssignment: (state, action) => {
+      state.assignments = state.assignments.filter(
+        (assignment) => assignment._id !== action.payload
       );
     },
-    updateModule: (state, action) => {
-      state.modules = state.modules.map((module) => {
-        if (module._id === action.payload._id) {
-          return action.payload;
-        } else {
-          return module;
-        }
-    });
-},
-setModule: (state, action) => {
-  state.module = action.payload;
-},
-},
+    saveAssignment: (state, action) => {
+      const index = state.assignments.findIndex((assignment) => assignment._id === action.payload._id);
+      if (index !== -1) {
+        state.assignments[index] = action.payload; 
+      } else {
+        state.assignments.push({ ...action.payload, _id: new Date().getTime().toString() }); 
+      }
+    },
+    
+  
+  },
 });
 
+export const { addAssignment, deleteAssignment, saveAssignment, setAssignment } = assignmentsSlice.actions;
 
-export const { addModule, deleteModule,
-updateModule, setModule } = modulesSlice.actions;
-export default modulesSlice.reducer;
+export default assignmentsSlice.reducer;
