@@ -1,4 +1,3 @@
-import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
@@ -8,16 +7,16 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   if (!course) return <div>Course not found</div>;
 
   return (
     <div>
-      <h1>Course {course.name}</h1>
+      <h1 style={{ marginLeft: "150px" }}>{course.name}</h1>
       <CourseNavigation />
-      <div>
+      <div> 
         <div className="overflow-y-scroll position-fixed bottom-0 end-0"
         style={{
           left: "320px",
