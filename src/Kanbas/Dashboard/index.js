@@ -40,7 +40,8 @@ function Dashboard({
         onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
       />
       <button className="btn btn-success" onClick={addNewCourse}>Add</button>
-      <button className="btn btn-success" onClick={updateCourse}>Update</button>
+      <button className="btn btn-success" onClick={()=>{updateCourse(course);
+      console.log(JSON.stringify(course));}}>Update</button>
       <div className="row">
         {courses.map((course) => (
           <div key={course._id} className="col-12 col-sm-6 col-md-4 col-lg-3 course-card">

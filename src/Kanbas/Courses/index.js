@@ -5,12 +5,28 @@ import Home from "./Home";
 import Assignments from './Assignments';
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
-  if (!course) return <div>Course not found</div>;
+  const [course, setCourse] = useState({});
+  const URL = "https://kanbas-node-server-app-stia.onrender.com/api/courses";
+
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+    useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+
+  // const course = courses.find((course) => course._id === courseId);
+  // if (!course) return <div>Course not found</div>;
 
   return (
     <div>
