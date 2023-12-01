@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Signin from "./users/signin";
+import Account from "./users/account";
 import KanbasNavigation from "./KanbasNavigation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
@@ -7,6 +9,8 @@ import db from "./Database";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import UserTable from "./users/table";
+import Signup from "./users/signup";
 
 function Kanbas() {
   const [courses, setCourses] = useState(db.courses);
@@ -24,9 +28,7 @@ function Kanbas() {
     name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
   });
-  // const addNewCourse =  () => {
-  //   setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
-  // };
+
   const addNewCourse = async () => {
     const response = await axios.post(URL, course);
     setCourses([
@@ -37,9 +39,7 @@ function Kanbas() {
   };
 
 
-  // const deleteCourse = (courseId) => {
-  //   setCourses(courses.filter((course) => course._id !== courseId));
-  // };
+ 
   const deleteCourse = async (course) => {
     const response = await axios.delete(
       `${URL}/${course}`
@@ -49,17 +49,7 @@ function Kanbas() {
   };
 
 
-  // const updateCourse = () => {
-  //   setCourses(
-  //     courses.map((c) => {
-  //       if (c._id === course._id) {
-  //         return course;
-  //       } else {
-  //         return c;
-  //       }
-  //     })
-  //   );
-  // };
+
   const updateCourse = async (course) => {
     const response = await axios.put(
       `${URL}/${course._id}`,
@@ -92,12 +82,14 @@ function Kanbas() {
         </div>
         
         <div className="col-md-9 content-area">
-          <Routes>
+          <Routes> 
             <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="Account" element={<h1>Account</h1>} />
-          
-            <Route path="Dashboard" element={
-  <Dashboard
+            <Route path="/Account" element={<Account/>} />
+            <Route path="/Account/:id" element={<Account />} />
+            <Route path="/signin" element={<Signin/>} />
+            <Route path="/signup" element={<Signup/>} />
+            <Route path="/admin/users" element={<UserTable />} />
+            <Route path="/Dashboard" element={<Dashboard
     courses={courses}
     course={course}
     setCourse={setCourse}
