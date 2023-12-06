@@ -19,7 +19,7 @@ function Account() {
   };
   const signout = async () => {
     await client.signout();
-    navigate("/project/signin");
+    navigate("/Kanbas/signin");
   };
 
 
