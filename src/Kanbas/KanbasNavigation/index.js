@@ -19,6 +19,8 @@ function KanbasNavigation() {
     { name: "Account", icon: faUser, route: "Account" },
     { name: "Dashboard", icon: faCompass, route: "Dashboard" },
     { name: "Courses", icon: faBook, route: "Courses" },
+    { name: "Signin", icon: faSignOutAlt, route: "Signin" },
+    { name: "Signup", icon: faSignOutAlt, route: "Signup" },
     { name: "Calendar", icon: faCalendarAlt, route: "Calendar" },
     { name: "Inbox", icon: faEnvelope, route: "Inbox" },
     { name: "History", icon: faClock, route: "History" },

@@ -1,11 +1,85 @@
+
 [
-    { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101" },
-    { "_id": "A102", "title": "Combustion Analysis", "course": "RS101" },
-    { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101" },
-    { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102" },
-    { "_id": "A202", "title": "Flow Analysis", "course": "RS102" },
-    { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
-    { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
-    { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
-    { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" }
-  ]
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "description": "Complete the propulsion system design.",
+    "dueDate": "2023-12-10",
+    "availableFromDate": "2023-09-01",
+    "availableUntilDate": "2023-12-10"
+  },
+  {
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "description": "Analyze different combustion chamber designs.",
+    "dueDate": "2023-12-15",
+    "availableFromDate": "2023-09-05",
+    "availableUntilDate": "2023-12-15"
+  },
+  {
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "description": "Design a nozzle that maximizes efficiency.",
+    "dueDate": "2023-11-30",
+    "availableFromDate": "2023-09-10",
+    "availableUntilDate": "2023-11-30"
+  },
+  {
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "description": "Quiz on fundamental aerodynamic concepts.",
+    "dueDate": "2023-10-05",
+    "availableFromDate": "2023-09-20",
+    "availableUntilDate": "2023-10-05"
+  },
+  {
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "description": "Perform flow analysis using computational methods.",
+    "dueDate": "2023-10-15",
+    "availableFromDate": "2023-09-25",
+    "availableUntilDate": "2023-10-15"
+  },
+  {
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "description": "Analyze the heating effects on spacecraft surfaces.",
+    "dueDate": "2023-10-25",
+    "availableFromDate": "2023-10-01",
+    "availableUntilDate": "2023-10-25"
+  },
+  {
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "description": "Design structural elements to withstand space conditions.",
+    "dueDate": "2023-11-20",
+    "availableFromDate": "2023-10-15",
+    "availableUntilDate": "2023-11-20"
+  },
+  {
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "description": "Calculate and optimize orbital trajectories.",
+    "dueDate": "2023-11-25",
+    "availableFromDate": "2023-10-20",
+    "availableUntilDate": "2023-11-25"
+  },
+  {
+    "_id": "A303",
+    "title": "Systems Engineering Exam",
+    "course": "RS103",
+    "description": "Exam covering the systems engineering process.",
+    "dueDate": "2023-12-01",
+    "availableFromDate": "2023-11-01",
+    "availableUntilDate": "2023-12-01"
+  }
+]
+
